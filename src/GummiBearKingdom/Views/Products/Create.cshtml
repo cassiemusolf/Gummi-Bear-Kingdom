@@ -10,13 +10,13 @@
 </head>
 <body>
     <div class="container add-form">
-    <h2>ADD A NEW GUMMI BEAR</h2>
-    <hr />
+        <h2>ADD A NEW GUMMI BEAR</h2>
+        <hr />
         @using (Html.BeginForm())
         {
             <h3>
                 @Html.LabelFor(model => model.Name)
-            @Html.TextBoxFor(model => model.Name)
+                @Html.TextBoxFor(model => model.Name)
             </h3>
             <br />
             <h3>
