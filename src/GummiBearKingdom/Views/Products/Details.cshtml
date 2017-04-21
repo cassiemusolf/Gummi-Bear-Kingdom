@@ -1,4 +1,8 @@
-﻿@model GummiBearKingdom.Models.Product
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model GummiBearKingdom.Models.Product
 
 <html>
 <head>
@@ -12,6 +16,8 @@
     <h4><strong>@Html.DisplayNameFor(model => model.Description):</strong> @Html.DisplayFor(model => model.Description)</h4>
     <h4><strong>@Html.DisplayNameFor(model => model.Country):</strong> @Html.DisplayFor(model => model.Country)</h4>
 
-    <h3>@Html.ActionLink("Edit", "Edit", new { id = Model.ProductId }) | @Html.ActionLink("Delete", "Delete", new { id = Model.ProductId })</h3> 
+    <h3>@Html.ActionLink("Edit", "Edit", new { id = Model.ProductId }) | @Html.ActionLink("Delete", "Delete", new { id = Model.ProductId })</h3>
+    <h3>@Html.ActionLink("Add a New Product", "Create") |
+    @Html.ActionLink("View All Products", "Index")</h3>
 </body>
 </html>
