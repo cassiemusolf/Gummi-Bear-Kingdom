@@ -9,15 +9,19 @@
     <title>Gummi Bear Kingdom - Products</title>
 </head>
 <body>
-    <h2>Gummi Bear Products</h2>
-    <h3>@Html.DisplayNameFor(model => model.Name)</h3>
-    <ul>
-        @foreach(var listProduct in Model)
-        {
-            <li>@Html.DisplayFor(modelProduct => listProduct.Name) | @Html.ActionLink("Details", "Details", new { id = listProduct.ProductId })</li>
-        }
-    </ul>
+    <div>
+        <div>
+            <img class="product-img" src="~/images/header.jpg"/>
+            <h2 class="product-title">OUR PRODUCTS</h2>
+        </div>
+        <div class="product-list container">
+            @foreach (var listProduct in Model)
+            {
+                <h3>@Html.DisplayFor(modelProduct => listProduct.Name)</h3>  <button class="button3 btn btn-default btn-lg">@Html.ActionLink("Details", "Details", new { id = listProduct.ProductId })</button>
+            }
+        </div>
 
-    <p>@Html.ActionLink("Add a New Product", "Create")</p>
+        <button class="button-add btn btn-default btn-lg">@Html.ActionLink("Add a New Product", "Create")</button>
+    </div>
 </body>
 </html>
