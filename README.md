@@ -6,7 +6,7 @@
 
 ## Description
 
-_This is a web application using .NET and migrations to build a sql database table. It is able to show a list of gummi bear products for the store, has the CRUD functionality for the items._
+_This is a web application using .NET and migrations to build a sql database table. It is able to show a list of gummi bear products for the store, has the CRUD functionality for the items. I am styling it based on some styling ideas from www.gopro.com_ I like the simplistic and bold sections that they have created.
 
 ## Setup/Installation Requirements
 
