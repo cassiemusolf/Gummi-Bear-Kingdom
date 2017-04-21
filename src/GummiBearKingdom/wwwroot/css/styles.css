@@ -3,10 +3,29 @@
     margin-top: -60px;
 }
 
+.gummy2 {
+    width: 100%;
+    margin-top: -80px;
+}
+
 .section2 {
     text-align: center;
-    margin-top: 200px;
+    margin-top: 120px;
+    background-color: white;
+    height: 350px;
+    width: 100%;
 }
+
+.about {
+    margin-top: 60px;
+}
+
+.btn {
+    margin: 40px;
+    background-color: lightgrey;
+
+}
+
 
 .title {
     text-align: center;
@@ -22,4 +41,15 @@
 
 body {
     margin-bottom: 80px;
+    background-color: lightgrey;
+}
+
+.section3 {
+    margin-top: 150px;
+}
+
+.text {
+    background-color: white !important;
+    margin-top: -20px;
+    text-align: center;
 }
