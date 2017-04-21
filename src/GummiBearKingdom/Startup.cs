@@ -26,6 +26,7 @@ namespace GummiBearKingdom
         }
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvc();
             services.AddEntityFramework()
     .AddDbContext<GummiBearDbContext>(options =>
         options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]));
@@ -33,6 +34,13 @@ namespace GummiBearKingdom
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}/{id?}");
+            });
+
             loggerFactory.AddConsole();
 
             if (env.IsDevelopment())
