@@ -9,29 +9,40 @@
     <title>Gummi Bear List - Edit</title>
 </head>
 <body>
-    <h2>Edit</h2>
-    <hr />
-    <h3>Edit this product: @Html.DisplayFor(model => model.Name)</h3>
+    <div class="container edit-form">
 
-    @using (Html.BeginForm())
-    {
-        @Html.HiddenFor(model => model.ProductId)
+        <h2>EDIT THIS PRODUCT:<strong> @Html.DisplayFor(model => model.Name)</strong></h2>
+        <hr />
 
-        @Html.LabelFor(model => model.Name)
-        @Html.EditorFor(model => model.Name)
+        @using (Html.BeginForm())
+        {
+            @Html.HiddenFor(model => model.ProductId)
 
-        @Html.LabelFor(model => model.Description)
-        @Html.EditorFor(model => model.Description)
 
-        @Html.LabelFor(model => model.Cost)
-        @Html.EditorFor(model => model.Cost)
+            <h3>
+                @Html.LabelFor(model => model.Name)
+                @Html.EditorFor(model => model.Name)
+            </h3>
+            <br />
+            <h3>
+                @Html.LabelFor(model => model.Description)
+                @Html.EditorFor(model => model.Description)
+            </h3>
+            <br />
+            <h3>
+                @Html.LabelFor(model => model.Cost)
+                @Html.EditorFor(model => model.Cost)
+            </h3>
+            <br />
+            <h3>
+                @Html.LabelFor(model => model.Country)
+                @Html.EditorFor(model => model.Country)
+            </h3>
+            <br />
 
-        @Html.LabelFor(model => model.Country)
-        @Html.EditorFor(model => model.Country)
+            <input class="btn btn-lg btn-default" type="submit" value="SAVE" />
+        }
+    </div>
 
-        <input type="submit" value="Save" />
-    }
-
-    <p>@Html.ActionLink("Back To List", "Index")</p>
 </body>
 </html>

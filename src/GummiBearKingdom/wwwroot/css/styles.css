@@ -31,6 +31,14 @@ body {
     width: 100%;
 }
 
+.product-list {
+    text-align: center;
+    margin-top: 180px;
+    background-color: white;
+    height: 350px;
+    width: 100%;
+}
+
 .about {
     margin-top: 60px;
 }
@@ -90,7 +98,41 @@ body {
 .product-title {
     text-align: center;
     color: white;
-    margin-top: -250px;
+    margin-top: -200px;
     font-size: 60px;
     font-weight: bold;
+}
+
+.list-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: white;
+}
+
+.card-title {
+    font-weight: bold;
+    color: darkred;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.product-individual {
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.button-add {
+    margin-top: 200px;
+    margin-left: 5%;
+}
+
+.add-form {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.edit-form {
+    text-align: center;
+    margin-top: 70px;
 }

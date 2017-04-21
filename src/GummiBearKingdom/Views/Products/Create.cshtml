@@ -9,25 +9,33 @@
     <title>Gummi Bear Kingdom - Create</title>
 </head>
 <body>
-    <h2>Add a New Product</h2>
+    <div class="container add-form">
+    <h2>ADD A NEW GUMMI BEAR</h2>
     <hr />
-    @using (Html.BeginForm())
-    {
-        @Html.LabelFor(model => model.Name)
-        @Html.TextBoxFor(model => model.Name)
-
-        @Html.LabelFor(model => model.Description)
-        @Html.TextBoxFor(model => model.Description)
-
-        @Html.LabelFor(model => model.Cost)
-        @Html.TextBoxFor(model => model.Cost)
-
-        @Html.LabelFor(model => model.Country)
-        @Html.TextBoxFor(model => model.Country)
-
-        <input type="submit" value="Add new product" />
-    }
-
-    <p>@Html.ActionLink("Back To List", "Index")</p>
+        @using (Html.BeginForm())
+        {
+            <h3>
+                @Html.LabelFor(model => model.Name)
+            @Html.TextBoxFor(model => model.Name)
+            </h3>
+            <br />
+            <h3>
+                @Html.LabelFor(model => model.Description)
+                @Html.TextBoxFor(model => model.Description)
+            </h3>
+            <br />
+            <h3>
+                @Html.LabelFor(model => model.Cost)
+                @Html.TextBoxFor(model => model.Cost)
+            </h3>
+            <br />
+            <h3>
+                @Html.LabelFor(model => model.Country)
+                @Html.TextBoxFor(model => model.Country)
+            </h3>
+            <br />
+            <input class="btn btn-lg btn-default" type="submit" value="ADD THIS PRODUCT" />
+        }
+    </div>
 </body>
 </html>

@@ -11,13 +11,22 @@
 <body>
     <div>
         <div>
-            <img class="product-img" src="~/images/header.jpg"/>
+            <img class="product-img" src="~/images/header.jpg" />
             <h2 class="product-title">OUR PRODUCTS</h2>
         </div>
-        <div class="product-list container">
+
+
+        <div class="row container-fluid list-section">
             @foreach (var listProduct in Model)
             {
-                <h3>@Html.DisplayFor(modelProduct => listProduct.Name)</h3>  <button class="button3 btn btn-default btn-lg">@Html.ActionLink("Details", "Details", new { id = listProduct.ProductId })</button>
+                <div class="product-individual col-sm-6">
+                    <div class="card">
+                        <div class="card-block">
+                            <h3 class="card-title">@Html.DisplayFor(modelProduct => listProduct.Name)</h3>
+                            <button class="button3 btn btn-default btn-lg">@Html.ActionLink("Details", "Details", new { id = listProduct.ProductId })</button>
+                        </div>
+                    </div>
+                </div>
             }
         </div>
 
