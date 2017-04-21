@@ -20,10 +20,10 @@
     margin-top: 60px;
 }
 
-.btn {
+.button1 {
     margin: 40px;
     background-color: lightgrey;
-
+    padding: 20px;
 }
 
 
@@ -52,4 +52,11 @@ body {
     background-color: white !important;
     margin-top: -20px;
     text-align: center;
+    height: 300px;
+}
+
+.button2 {
+    background-color: lightgrey;
+    margin-top: 40px;
+    padding: 20px;
 }
