@@ -9,15 +9,23 @@
     <title>Gummi Bear Kingdom - Details</title>
 </head>
 <body>
-    <h2>Product Details</h2>
-    <hr />
-    <h3><strong>@Html.DisplayNameFor(model => model.Name):</strong> @Html.DisplayFor(model => model.Name)</h3>
-    <h3><strong>@Html.DisplayNameFor(model => model.Cost):</strong> @Html.DisplayFor(model => model.Cost)</h3>
-    <h4><strong>@Html.DisplayNameFor(model => model.Description):</strong> @Html.DisplayFor(model => model.Description)</h4>
-    <h4><strong>@Html.DisplayNameFor(model => model.Country):</strong> @Html.DisplayFor(model => model.Country)</h4>
+    <div class="container details">
+        <h2>PRODUCT DETAILS</h2>
+        <hr />
+        <br />
+        <h2 class="product-name"><strong>@Html.DisplayFor(model => model.Name)</strong></h2>
+        <h3><strong>@Html.DisplayNameFor(model => model.Cost):</strong> $@Html.DisplayFor(model => model.Cost)</h3>
+        <h3><strong>@Html.DisplayNameFor(model => model.Description):</strong> @Html.DisplayFor(model => model.Description)</h3>
+        <h3><strong>@Html.DisplayNameFor(model => model.Country):</strong> @Html.DisplayFor(model => model.Country)</h3>
+        <br />
+        <hr />
 
-    <h3>@Html.ActionLink("Edit", "Edit", new { id = Model.ProductId }) | @Html.ActionLink("Delete", "Delete", new { id = Model.ProductId })</h3>
-    <h3>@Html.ActionLink("Add a New Product", "Create") |
-    @Html.ActionLink("View All Products", "Index")</h3>
+        <h3>@Html.ActionLink("Edit", "Edit", new { id = Model.ProductId }) | @Html.ActionLink("Delete", "Delete", new { id = Model.ProductId })</h3>
+        <h3>
+        
+        @Html.ActionLink("Add a New Product", "Create") |
+        @Html.ActionLink("View All Products", "Index")
+    </h3>
+</div>
 </body>
 </html>

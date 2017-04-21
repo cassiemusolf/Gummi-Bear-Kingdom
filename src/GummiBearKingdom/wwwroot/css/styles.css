@@ -136,3 +136,17 @@ body {
     text-align: center;
     margin-top: 70px;
 }
+
+.details {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.delete-page {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.product-name {
+    color: darkred;
+}
