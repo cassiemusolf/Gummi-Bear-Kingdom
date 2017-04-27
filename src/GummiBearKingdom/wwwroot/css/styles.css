@@ -156,6 +156,13 @@ body {
     color: darkred;
 }
 
-.gummy-pics {
-    width: 100px;
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+.card:hover {
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
 }
