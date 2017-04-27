@@ -21,10 +21,14 @@
             {
                 <div class="product-individual col-sm-6">
                     <div class="card">
+                        <a href="@Url.Action("Details", new { id = listProduct.ProductId })">
                         <div class="card-block">
+                <img src="@Html.DisplayFor(modelProduct => listProduct.Image)" height="200" width="200" />
                             <h3 class="card-title">@Html.DisplayFor(modelProduct => listProduct.Name)</h3>
-                            <button class="button3 btn btn-default btn-lg">@Html.ActionLink("Details", "Details", new { id = listProduct.ProductId })</button>
+            
                         </div>
+
+                    </a>
                     </div>
                 </div>
             }

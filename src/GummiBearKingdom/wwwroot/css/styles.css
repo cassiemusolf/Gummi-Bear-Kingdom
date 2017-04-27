@@ -21,6 +21,11 @@ body {
     font-size: 18px;
     font-weight: bold;
     margin-right: 15px;
+    color: white !important;
+}
+
+.navbar > li > a {
+    color: white;
 }
 
 .section2 {
@@ -149,4 +154,8 @@ body {
 
 .product-name {
     color: darkred;
+}
+
+.gummy-pics {
+    width: 100px;
 }

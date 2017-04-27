@@ -13,6 +13,7 @@
         <h2>PRODUCT DETAILS</h2>
         <hr />
         <br />
+        <img src="@Html.DisplayFor(model => model.Image)" height="400" width="400" />
         <h2 class="product-name"><strong>@Html.DisplayFor(model => model.Name)</strong></h2>
         <h3><strong>@Html.DisplayNameFor(model => model.Cost):</strong> $@Html.DisplayFor(model => model.Cost)</h3>
         <h3><strong>@Html.DisplayNameFor(model => model.Description):</strong> @Html.DisplayFor(model => model.Description)</h3>
