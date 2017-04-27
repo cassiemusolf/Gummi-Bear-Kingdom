@@ -5,7 +5,6 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-
 }
 
 .gummy2 {
@@ -22,10 +21,6 @@ body {
     font-weight: bold;
     margin-right: 15px;
     color: white !important;
-}
-
-.navbar > li > a {
-    color: white;
 }
 
 .section2 {
@@ -156,13 +151,34 @@ body {
     color: darkred;
 }
 
-@media only screen and (max-width: 500px) {
-    body {
-        background-color: lightblue;
+@media only screen and (max-width: 767px) {
+    .navbar li {
+        display: none;
+    }
+
+    .gummy {
+        margin-top: 20px;
+    }
+
+    .title {
+        font-size: 50px;
+        margin-top: -200px;
+    }
+}
+
+@media only screen and (max-width: 828px) {
+    .section2 {
+        margin-top: 100px;
     }
 }
 
 .card:hover {
-  -webkit-transform: scale(1.25);
-  transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
+}
+
+.btn:hover {
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
+    background-color: darkorange;
 }
